@@ -52,6 +52,7 @@ $(document).ready(function() {
     questionReUse(q5);
     $(".questionnaire").fadeOut(1200);
     $(".finalPage").delay(1200).fadeIn(600);
+    $(winner()).show();
   });
 
 
@@ -88,12 +89,14 @@ var questionReUse = function(q) {
 }
 
 //Pick winner
-if (ruby >= php && ruby >= cSharp && ruby >= java) {
-
-} else if (php >= ruby && php >= cSharp && php >= java) {
-
-} else if (cSharp >= ruby && cSharp >= php && cSharp >= java) {
-
-} else if (java >= ruby && java >= cSharp && java >= php) {
-
+var winner = function() {
+  if (ruby >= php && ruby >= cSharp && ruby >= java) {
+    return ".ruby";
+  } else if (php >= ruby && php >= cSharp && php >= java) {
+    return ".php";
+  } else if (cSharp >= ruby && cSharp >= php && cSharp >= java) {
+    return ".csharp";
+  } else if (java >= ruby && java >= cSharp && java >= php) {
+    return ".java";
+  }
 }

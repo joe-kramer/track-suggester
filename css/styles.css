@@ -1,13 +1,18 @@
 .jumbotron {
   text-align: center;
+  margin-top: 10px;
 }
-/*
+
 body {
+  background-color: #b2ffff;
+  color: black;
+  /*
   background: url(img/background.jpeg);
   height: 100%;
   width: 100%;
+  */
 }
-*/
+
 .questionnaire {
   display: none;
 }

@@ -1,15 +1,17 @@
 .jumbotron {
   text-align: center;
 }
-
+/*
 body {
   background: url(img/background.jpeg);
-  /*
   height: 100%;
   width: 100%;
-  */
+}
+*/
+.questionnaire {
+  display: none;
 }
 
-.questionnaire {
+.q2Page {
   display: none;
 }

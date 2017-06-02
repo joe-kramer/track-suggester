@@ -22,6 +22,8 @@ $(document).ready(function() {
     event.preventDefault();
     var q2 = parseInt($("input:radio[name=q2]:checked").val());
     questionReUse(q2);
+    $(".q2Page").slideUp(500);
+    $(".q3Page").delay(500).slideDown(500);
   });
 
   //Q3
@@ -29,6 +31,17 @@ $(document).ready(function() {
     event.preventDefault();
     var q3 = parseInt($("input:radio[name=q3]:checked").val());
     questionReUse(q3);
+    $(".q3Page").slideUp(500);
+    $(".q4Page").delay(500).slideDown(500);
+  });
+
+  //Q4
+  $("#formFive").submit(function(event) {
+    event.preventDefault();
+    var q4 = parseInt($("input:radio[name=q4]:checked").val());
+    questionReUse(q4);
+    $(".q4Page").slideUp(500);
+    $(".q5Page").delay(500).slideDown(500);
   });
 
   //Q5
@@ -58,7 +71,7 @@ var question1 = function(q1) {
   }
 }
 
-//Q2, Q3, and Q5
+//Q2, Q3, Q4, and Q5
 var questionReUse = function(q) {
   if (q === 1) {
     ruby += 1;
@@ -66,7 +79,7 @@ var questionReUse = function(q) {
     php += 1;
   } else if (q === 3) {
     cSharp += 1;
-  } else if (q2=== 4) {
+  } else if (q=== 4) {
     java += 1;
   }
 }

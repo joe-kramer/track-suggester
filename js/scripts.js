@@ -8,6 +8,7 @@ $(document).ready(function() {
     $(".questionnaire").delay(1000).fadeIn(1000);
   });
 
+  //Q1
   $("#formTwo").submit(function(event) {
     event.preventDefault();
     var q1 = parseInt($("input:radio[name=q1]:checked").val());
@@ -16,11 +17,27 @@ $(document).ready(function() {
     $(".q2Page").delay(500).slideDown(500);
   });
 
+  //Q2
   $("#formThree").submit(function(event) {
     event.preventDefault();
     var q2 = parseInt($("input:radio[name=q2]:checked").val());
-    question2(q2);
+    questionReUse(q2);
   });
+
+  //Q3
+  $("#formFour").submit(function(event) {
+    event.preventDefault();
+    var q3 = parseInt($("input:radio[name=q3]:checked").val());
+    questionReUse(q3);
+  });
+
+  //Q5
+  $("#formSix").submit(function(event) {
+    event.preventDefault();
+    var q5 = parseInt($("input:radio[name=q5]:checked").val());
+    questionReUse(q5);
+  });
+
 
 });
 
@@ -41,15 +58,15 @@ var question1 = function(q1) {
   }
 }
 
-//Q2
-var question2 = function(q2) {
-  if (q2 === 1) {
+//Q2, Q3, and Q5
+var questionReUse = function(q) {
+  if (q === 1) {
     ruby += 1;
-  } else if (q2 === 2) {
+  } else if (q === 2) {
     php += 1;
-  } else if (q2 === 3) {
+  } else if (q === 3) {
     cSharp += 1;
-  } else if (q2 === 4) {
+  } else if (q2=== 4) {
     java += 1;
   }
 }

@@ -1,4 +1,15 @@
-.introPage {
+.jumbotron {
   text-align: center;
-  
+}
+
+body {
+  background-image: url(img/background.jpeg);
+  /*
+  height: 100%;
+  width: 100%;
+  */
+}
+
+.questionnaire {
+  display: none;
 }

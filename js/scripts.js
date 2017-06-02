@@ -4,6 +4,7 @@ $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
     var name = $("input#name").val();
+    $("#insertName").append(name);
     $(".introPage").fadeOut(1000);
     $(".questionnaire").delay(1000).fadeIn(1000);
   });
@@ -49,6 +50,8 @@ $(document).ready(function() {
     event.preventDefault();
     var q5 = parseInt($("input:radio[name=q5]:checked").val());
     questionReUse(q5);
+    $(".questionnaire").fadeOut(1200);
+    $(".finalPage").delay(1200).fadeIn(600);
   });
 
 
@@ -82,4 +85,15 @@ var questionReUse = function(q) {
   } else if (q=== 4) {
     java += 1;
   }
+}
+
+//Pick winner
+if (ruby >= php && ruby >= cSharp && ruby >= java) {
+
+} else if (php >= ruby && php >= cSharp && php >= java) {
+
+} else if (cSharp >= ruby && cSharp >= php && cSharp >= java) {
+
+} else if (java >= ruby && java >= cSharp && java >= php) {
+
 }

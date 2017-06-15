@@ -4,13 +4,12 @@
 }
 
 body {
-  background-color: #b2ffff;
+  background-image: url("../img/background.jpeg");
+  color: white;
+}
+
+.jumbotron {
   color: black;
-  /*
-  background: url(img/background.jpeg);
-  height: 100%;
-  width: 100%;
-  */
 }
 
 .questionnaire {

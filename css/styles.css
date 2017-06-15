@@ -1,15 +1,14 @@
 .jumbotron {
   text-align: center;
   margin-top: 10px;
+  color: black;
 }
 
 body {
-  background-image: url("../img/background.jpeg");
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
-}
-
-.jumbotron {
-  color: black;
 }
 
 .questionnaire {
